@@ -10,7 +10,7 @@ public class PointShopController {
 	@GetMapping("/pointshop")
 	public void pointShop() {
 		
-		System.out.println("하잉");
+		System.out.println("하잉"); 
 	} 
 	
 }
