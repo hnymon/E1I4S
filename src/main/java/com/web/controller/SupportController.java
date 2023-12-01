@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SupportController {
 	@GetMapping("/bug-report_main")
 	public void bug_report(){
-		
+		// ㅎㅇ
 	}
 	@GetMapping("/bug-report_popUp")
 	public void bug_report_popUp(){
