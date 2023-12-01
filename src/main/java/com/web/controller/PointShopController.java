@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PointShopController {
 	@GetMapping("/pointshop")
 	public void pointShop() {
+		
+		System.out.println("하잉"); 
 	} 
 	
 }
