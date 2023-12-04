@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>회원가입 페이지</title>
+	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
+	<script type="text/javascript" src="/resources/js/join.js"></script>
+</head>
+
+<divbody>
+	<div class="wrapper">
+		<div class="header">
+			<div class="headerDeco">
+				<h1><a href="/" a2soptGnb="GnbLogo"><img src="/resources/img/logo1.png" width="120" height="120"
+							alt="E1I4S" /></a></h1>
+				<ul class="headerNav">
+					<li><a href="/">메인 홈페이지</a> <!-- header 메인 페이지 이동-->
+					</li>
+					<a href="#" onclick="">로그인</a> <!-- header - 로그인 페이지 이동-->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<form name="joinForm" action="joinSuccess" method="post">
+		        <label for="id">ID:</label>
+		        <input type="text" id="id" name="id" required><br>
+		
+		        <label for="password">Password:</label>
+		        <input type="password" id="password" name="password" required><br>
+		        
+		        <label for="repassword">rePassword:</label>
+		        <input type="password" id="repassword" name="repassword" required><br>
+		
+		        <label for="name">Name:</label>
+		        <input type="text" id="name" name="name" required><br>
+		
+		        <label for="nickName">Nickname:</label>
+		        <input type="text" id="nickName" name="nickName" required><br>
+		
+		        <label for="phoneNumber">Phone Number:</label>
+		        <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+		
+		        <label for="birth">Date of Birth:</label>
+		        <input type="text" id="birth" name="birth" placeholder="YYYY-MM-DD" required><br>
+		
+		        <label for="email">Email:</label>
+		        <input type="email" id="email" name="email" required><br>
+		
+		        <label for="domain">Domain:</label>
+		        <input type="text" id="domain" name="domain"><br>
+		
+		        <label for="addr">Address:</label>
+		        <input type="text" id="addr" name="addr"><br>
+		
+		        <label for="point">Point:</label>
+		        <input type="number" id="point" name="point" value="0"/><br/>
+		
+		        <label for="totalPoint">Total Point:</label>
+		        <input type="number" id="totalPoint" name="totalPoint" value="0"><br>
+		
+		        <input type="button" value="등록" onclick="checkJoin()"/>
+		    </form>
+		</div>
+		
+		<div class="footer" id="footer"></div>
+		<script type="text/javascript" src="https://ssl.nexon.com/s1/global/ngb_footerExtend.js"
+			charset="euc-kr"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				NgbFooter.appendFooter('footer');
+			});
+		</script>
+	</div>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("news")
 @Controller
-public class NewController {
+public class NewsController {
 	@GetMapping("/notice")
 	public void notice() {
 	} 
